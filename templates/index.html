@@ -653,13 +653,17 @@
 
     <div id="homePage" class="fade-in">
       <header>
-        <img src="app_logo - Copy.png" alt="" class="logo" />
+        <img
+          src="{{ url_for('static', filename='app_logo.png') }}"
+          alt="Photo"
+          class="logo"
+        />
         <h1>IOT INNOVATIONS</h1>
         <h3>Welcome to IOT INNOVATIONS</h3>
         <button class="logout" onclick="logout()">Logout</button>
       </header>
       <section class="image">
-        <img src="iot02.jpg" alt="" />
+        <img src="{{ url_for('static', filename='iot02.jpg') }}" alt="Photo" />
       </section>
       <div class="team">
         <svg
@@ -705,7 +709,7 @@
     <div id="dashboardPage">
       <h1>Projects Dashboard</h1>
       <div>
-        <img src="led.webp" alt="" />
+        <img src="{{ url_for('static', filename='led.webp') }}" alt="Photo" />
         <h2>LED CONTROL</h2>
         <p>
           Control your LED lights remotely with a single click. Switch them ON
