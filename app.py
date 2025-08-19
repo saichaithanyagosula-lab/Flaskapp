@@ -48,7 +48,7 @@ def sitemap():
 @app.route("/robots.txt")
 def robots():
     robots_txt = """User-agent: *
-Disallow:
+Allow: /
 
 Sitemap: https://flaskapp-rxvd.onrender.com/sitemap.xml
 """
